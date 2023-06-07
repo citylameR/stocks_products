@@ -1,9 +1,16 @@
 # примеры API-запросов
 
+
 #baseUrl = http://localhost:8000/api/v1'
 
 # создание продукта
 POST http://localhost:8000/api/v1/products/
+=======
+@baseUrl = http://localhost:8000/api/v1
+
+# создание продукта
+POST {{baseUrl}}/products/
+>>>>>>> 37163c66118d559b0cc7a93b3c34e992e41ffc0a
 Content-Type: application/json
 
 {
@@ -14,13 +21,21 @@ Content-Type: application/json
 ###
 
 # получение продуктов
+<<<<<<< HEAD
 GET http://localhost:8000/api/v1/products/
+=======
+GET {{baseUrl}}/products/
+>>>>>>> 37163c66118d559b0cc7a93b3c34e992e41ffc0a
 Content-Type: application/json
 
 ###
 
 # обновление продукта
+<<<<<<< HEAD
 PATCH http://localhost:8000/api/v1/products/1/
+=======
+PATCH {{baseUrl}}/products/1/
+>>>>>>> 37163c66118d559b0cc7a93b3c34e992e41ffc0a
 Content-Type: application/json
 
 {
@@ -30,19 +45,31 @@ Content-Type: application/json
 ###
 
 # удаление продукта
+<<<<<<< HEAD
 DELETE http://localhost:8000/api/v1/products/1/
+=======
+DELETE {{baseUrl}}/products/1/
+>>>>>>> 37163c66118d559b0cc7a93b3c34e992e41ffc0a
 Content-Type: application/json
 
 ###
 
 # поиск продуктов по названию и описанию
+<<<<<<< HEAD
 GET http://localhost:8000/api/v1/products/?search=помидор
+=======
+GET {{baseUrl}}/products/?search=помидор
+>>>>>>> 37163c66118d559b0cc7a93b3c34e992e41ffc0a
 Content-Type: application/json
 
 ###
 
 # создание склада
+<<<<<<< HEAD
 POST http://localhost:8000/api/v1/stocks/
+=======
+POST {{baseUrl}}/stocks/
+>>>>>>> 37163c66118d559b0cc7a93b3c34e992e41ffc0a
 Content-Type: application/json
 
 {
@@ -64,7 +91,11 @@ Content-Type: application/json
 ###
 
 # обновляем записи на складе
+<<<<<<< HEAD
 PATCH http://localhost:8000/api/v1/stocks/4/
+=======
+PATCH {{baseUrl}}/stocks/4/
+>>>>>>> 37163c66118d559b0cc7a93b3c34e992e41ffc0a
 Content-Type: application/json
 
 {
@@ -85,5 +116,9 @@ Content-Type: application/json
 ###
 
 # поиск складов, где есть определенный продукт
+<<<<<<< HEAD
 GET http://localhost:8000/api/v1/stocks/?products=2
+=======
+GET {{baseUrl}}/stocks/?products=2
+>>>>>>> 37163c66118d559b0cc7a93b3c34e992e41ffc0a
 Content-Type: application/json

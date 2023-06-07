@@ -33,6 +33,7 @@ class StockSerializer(serializers.ModelSerializer):
                                                             quantity=i['quantity'],
                                                             price=i['price'])
 
+
         return stock
 
     def update(self, instance, validated_data):
